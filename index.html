@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập Js buổi 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="project">
+      <div class="container py-5">
+        <div class="card mx-auto">
+          <!-- Nav pills -->
+          <ul class="nav nav-pills jutify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#bai1"
+                >Bài 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai4">Bài 4</a>
+            </li>
+          </ul>
+          <hr />
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane container active" id="bai1">
+              <h3>Tìm số nguyên dương nhỏ nhất sao cho</h3>
+              <p>1 + 2 + 3 + ... + n > 10000 </p>
+              <div class="form-group row">
+                <div class="col-4">
+                  <input
+                    class="form-control"
+                    id="nhapSo"
+                    placeholder="Nhập số"
+                  />
+                </div>
+               
+                
+                <div class="col-4 ">
+                  <button class="btn btn-primary" id="btnKetQua1">
+                    kết quả
+                </div>
+              </div>
+              <div
+                class="form-group mt-2 alert alert-success"
+                id="ketQua_b1"
+              ></div>
+            </div>
+            <div class="tab-pane container fade" id="bai2">
+              <h3>Tính tổng</h3>
+              <p>Viết chương trình nhập vào 2 số x, n tính tổng:
+                <br/>
+                S(n) = x + x^2 + x^3 + … + x^n (Sử dụng vòng lặp và hàm)
+              </p>
+              
+              <div class="form-group row">
+               
+                <div class="col-4">
+                    <input
+                    class="form-control"
+                    id="nhapX"
+                    placeholder="Nhập x"
+                    type="number"
+                  />
+                </div>
+                <div class="col-4">
+                    <input
+                    class="form-control"
+                    id="nhapN"
+                    placeholder="Nhập n"
+                    type="number"
+                  />
+                </div>
+                
+                <div class="col-12 mt-2">
+                    <button class="btn btn-primary" id="btnTinhTong">
+                     Tính tổng
+                  </div>
+              </div>
+              
+              <div
+                class="form-group mt-2 alert alert-success"
+                id="ketQua_b2"
+              ></div>
+            </div>
+            <div class="tab-pane container fade" id="bai3">
+                <h3>Tính giai thừa</h3>
+                <p>Nhập vào n. Tính giai thừa 1*2*...n</p>
+                
+                <div class="form-group row">
+                 
+                  <div class="col-4">
+                      <input
+                      class="form-control"
+                      id="nhapSoN"
+                      placeholder="Nhập n"
+                      type="number"
+                    />
+                  </div>
+                  
+                  
+                  <div class="col-12 mt-2">
+                      <button class="btn btn-primary" id="btnTinhTGiaiThua">
+                       Tính giai thừa
+                    </div>
+                </div>
+                
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b3"
+                ></div>
+            </div>
+            <div class="tab-pane container fade" id="bai4">
+                <h3>Tạo thẻ div</h3>
+                <p>Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div.
+                    Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì
+                    background màu xanh.
+                    </p>
+                
+                <div class="form-group row">
+                 
+                  <div class="col-4">
+                      <input
+                      class="form-control"
+                      id="nhapSoLan"
+                      placeholder="Nhập số lần"
+                      type="number"
+                    />
+                  </div>
+                  
+                  
+                  <div class="col-12 mt-2">
+                      <button class="btn btn-primary" id="btnTaoTheDiv">
+                       In thẻ div
+                    </div>
+                </div>
+                
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b4"
+                ></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
